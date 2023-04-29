@@ -2,7 +2,7 @@
 # from test3 import *
 from telebot import TeleBot
 from telebot import types
-from pparser import Parser
+from vacancy_parser import Parser
 
 
 class Bot:
@@ -21,7 +21,7 @@ class Bot:
                 reply_markup=self.keyboard_start_search_job())
 
         @self.bot.message_handler(content_types=["text"])
-        def handler_down(message):
+        def vacancy(message):
             user_id = message.chat.id
             match message.text.lower():
                 case "поиск работы":

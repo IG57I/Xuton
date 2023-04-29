@@ -6,10 +6,10 @@ import json
 
 class Parser:
 
-    def __init__(self, vacansy_name) -> None:
-        self.vacansy_name = vacansy_name
+    def __init__(self, vacancy_name) -> None:
+        self.vacancy_name = vacancy_name
 
-    def __getPage(self, page=0, vacansy_name=None, vacansy_description=None):
+    def __getPage(self, page=0, vacancy_name=None, vacancy_description=None):
         """
         Создаем метод для получения страницы со списком вакансий.
         Аргументы:
@@ -19,8 +19,8 @@ class Parser:
         # Справочник для параметров GET-запроса
         params = {
             'text':
-            f'DESCRIPTION:{vacansy_name}',  # Текст фильтра. В имени должно быть слово "Аналитик"
-            #'text': f'DESCRIPTION:{vacansy_description}',
+            f'DESCRIPTION:{vacancy_name}',  # Текст фильтра. В имени должно быть слово "Аналитик"
+            #'text': f'DESCRIPTION:{vacancy_description}',
             'area': 1,  # Поиск ощуществляется по вакансиям города Москва
             'page': page,  # Индекс страницы поиска на HH
             'per_page': 100  # Кол-во вакансий на 1 странице
@@ -37,7 +37,7 @@ class Parser:
         # Считываем первые 2000 вакансий
         for page in range(0, 1):
             # Преобразуем текст ответа запроса в справочник Python
-            jsObj = [json.loads(self.__getPage(page, self.vacansy_name))]
+            jsObj = [json.loads(self.__getPage(page, self.vacancy_name))]
             list_vac = []
             for vac in jsObj[0]['items']:
                 vac_data = {}

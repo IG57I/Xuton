@@ -2,7 +2,7 @@ from os import listdir
 
 
 class ReadConfig:
-
+    """Класс чтобы считывать токен с config.txt"""
     def __init__(self):
         self.TOKEN = None
 

@@ -1,5 +1,3 @@
-# from time import sleep
-# from test3 import *
 from telebot import TeleBot
 from telebot import types
 from vacancy_parser import Parser

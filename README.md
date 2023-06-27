@@ -1,10 +1,10 @@
-# HHJobSearchBot
+# HH-Job-Search-Bot 
 
-Welcome to the HHJobSearchBot repository! This repository is a fork of the original Xuton repository and contains improvements and modifications specific to your needs. HHJobSearchBot is a Telegram bot built in Python that allows users to search for job vacancies on HeadHunter (HH.ru) and view details about each job.
+Welcome to the HH-Job-Search-Bot  repository! This repository is a fork of the original Xuton repository and contains improvements and modifications specific to your needs. HH-Job-Search-Bot is a Telegram bot built in Python that allows users to search for job vacancies on HeadHunter (HH.ru) and view details about each job.
 
 ## Usage
 
-To use the HHJobSearchBot, follow these steps:
+To use the HH-Job-Search-Bot, follow these steps:
 
 1. Clone the repository to your local machine.
 
@@ -53,9 +53,9 @@ Since this is a forked repository, please refer to the original repository for c
 
 ## Contact
 
-If you have any questions or need assistance with the HHJobSearchBot functionality specific to your forked repository, you can reach out to the maintainers of the original repository via the GitHub repository's issue tracker.
+If you have any questions or need assistance with the HH-Job-Search-Bot  functionality specific to your forked repository, you can reach out to the maintainers of the original repository via the GitHub repository's issue tracker.
 
-Happy job searching with HHJobSearchBot!
+Happy job searching with HH-Job-Search-Bot !
 
 Best regards,
 Hazardooo
